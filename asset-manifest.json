@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/swift1719/covid_tracker/static/css/main.92b4ee4c.chunk.css",
-    "main.js": "/swift1719/covid_tracker/static/js/main.b06d0293.chunk.js",
-    "main.js.map": "/swift1719/covid_tracker/static/js/main.b06d0293.chunk.js.map",
-    "runtime-main.js": "/swift1719/covid_tracker/static/js/runtime-main.6eeee3cd.js",
-    "runtime-main.js.map": "/swift1719/covid_tracker/static/js/runtime-main.6eeee3cd.js.map",
-    "static/js/2.0058d746.chunk.js": "/swift1719/covid_tracker/static/js/2.0058d746.chunk.js",
-    "static/js/2.0058d746.chunk.js.map": "/swift1719/covid_tracker/static/js/2.0058d746.chunk.js.map",
-    "index.html": "/swift1719/covid_tracker/index.html",
-    "static/css/main.92b4ee4c.chunk.css.map": "/swift1719/covid_tracker/static/css/main.92b4ee4c.chunk.css.map",
-    "static/js/2.0058d746.chunk.js.LICENSE.txt": "/swift1719/covid_tracker/static/js/2.0058d746.chunk.js.LICENSE.txt",
-    "static/media/covid19_image.9e5d4fc7.png": "/swift1719/covid_tracker/static/media/covid19_image.9e5d4fc7.png"
+    "main.css": "/covid_tracker/static/css/main.92b4ee4c.chunk.css",
+    "main.js": "/covid_tracker/static/js/main.b06d0293.chunk.js",
+    "main.js.map": "/covid_tracker/static/js/main.b06d0293.chunk.js.map",
+    "runtime-main.js": "/covid_tracker/static/js/runtime-main.4f4fdeb2.js",
+    "runtime-main.js.map": "/covid_tracker/static/js/runtime-main.4f4fdeb2.js.map",
+    "static/js/2.0058d746.chunk.js": "/covid_tracker/static/js/2.0058d746.chunk.js",
+    "static/js/2.0058d746.chunk.js.map": "/covid_tracker/static/js/2.0058d746.chunk.js.map",
+    "index.html": "/covid_tracker/index.html",
+    "static/css/main.92b4ee4c.chunk.css.map": "/covid_tracker/static/css/main.92b4ee4c.chunk.css.map",
+    "static/js/2.0058d746.chunk.js.LICENSE.txt": "/covid_tracker/static/js/2.0058d746.chunk.js.LICENSE.txt",
+    "static/media/covid19_image.9e5d4fc7.png": "/covid_tracker/static/media/covid19_image.9e5d4fc7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6eeee3cd.js",
+    "static/js/runtime-main.4f4fdeb2.js",
     "static/js/2.0058d746.chunk.js",
     "static/css/main.92b4ee4c.chunk.css",
     "static/js/main.b06d0293.chunk.js"
