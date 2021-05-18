@@ -2,12 +2,13 @@
     display: flex;
     justify-content: center;
     width: 85%;
+    margin-bottom: 40px;
 }
 @media (max-width:770px) {
     .container{
-        width: 100%;
+        width: 90%;
     }
     .image{
-        width: 100%;
+        width: 90%;
     }
 }
