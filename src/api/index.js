@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 const url="https://covid19.mathdro.id/api";
-//function to fetch data as per the country
+// function to fetch the confirmed, recovered, and death details with last updated time
+// according to the worldwide or according to the country wise. 
+//fetchData function helps to fetch the data to display the results in the Cards component.
 export const fetchData = async (country)=>{
     let updatedUrl=url;
     if(country){
@@ -29,6 +31,9 @@ export const fetchData = async (country)=>{
     }
 }
 
+//return response object having daily global data
+// function to fetch the daily total deaths and total confirmed details with the respective dates.
+// fetchDailyData function helps to fetch the data to display the results in the Chart component.
 export const fetchDailyData = async ()=>{
     try {
         const {data} = await axios.get(`${url}/daily`);
@@ -42,8 +47,11 @@ export const fetchDailyData = async ()=>{
         console.log(error);
     }
 }
-
+// function to fetch all countries
+// fetchCountries function is to map the country’s shortened name with the Country’s name. 
+// fetchCountries function helps to fetch the country name to display the results in the CountryPicker component.
 export const fetchCountries = async ()=>{
+    //returns an object containing an array of countries objects
     try {
         const{
             data:{
