@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card,CardContent,Typography,Grid} from '@material-ui/core';
-import styles from './cards.module.css';
+import styles from './cards.css';
 import CountUp from 'react-countup';
 import cx from 'classnames';
 // Cards component is a purely functional component that returns JSX. 
