@@ -2,10 +2,11 @@ import React from 'react';
 import {Cards,Chart,CountryPicker} from './components';
 import styles from './app';
 import {fetchData} from './api';
-import coronaImage from './images/corona.png';
+import coronaImage from './images/covid19_image.png';
 
 // Component is responsible for sending country & data together into a single view so the website 
 // can dynamically change based on the country’s selection whether to show a bar chart or line chart.
+// App Component is a class component that has asynchronous React lifecycle method componentDidMount.
 class App extends React.Component{
     state={
         data:{},
