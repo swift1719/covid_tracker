@@ -5,36 +5,39 @@ import styles from './chart.css';
 
 const Chart = ({data:{confirmed,recovered,deaths},country}) => {
     const [dailyData, setdailyData] = useState([]);
-    
+    let lineChart;
     useEffect(()=>{
         const fetchAPI=async ()=>{
             setdailyData(await fetchDailyData());
         };
         fetchAPI();
     },[]);
-
-    const lineChart = dailyData.length?(
-        <Line
-        data={{
-            labels:dailyData.map(({date})=>date),
-            datasets:[
-                {
-                    data:dailyData.map(({confirmed})=>confirmed),
-                    label:"Infected",
-                    borderColor:"#3333ff",
-                    fill:true
-                },
-                {
-                    data:dailyData.map(({deaths})=>deaths),
-                    label:"Deaths",
-                    borderColor:"red",
-                    backgroundColor:"rgba(255,0,0,0.5)",
-                    fill:true,
-                },
-            ],
-        }}
-        />
-    ):null;
+    
+    if(dailyData){
+        lineChart = dailyData.length?(
+            <Line
+            data={{
+                labels:dailyData.map(({date})=>date),
+                datasets:[
+                    {
+                        data:dailyData.map(({confirmed})=>confirmed),
+                        label:"Infected",
+                        borderColor:"#3333ff",
+                        fill:true
+                    },
+                    {
+                        data:dailyData.map(({deaths})=>deaths),
+                        label:"Deaths",
+                        borderColor:"red",
+                        backgroundColor:"rgba(255,0,0,0.5)",
+                        fill:true,
+                    },
+                ],
+            }}
+            />
+        ):null;
+    }
+    
 
     const barChart = confirmed?(
         <Bar
